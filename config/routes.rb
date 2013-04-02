@@ -4,9 +4,9 @@ Pintrest::Application.routes.draw do
 
   devise_for :users
 
-  root :to => 'pages#home'
+  get 'about' => 'pages#about' 
 
-  get 'about' => 'pages#about'  
+  root :to => 'pins#index' 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
